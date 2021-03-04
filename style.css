@@ -2,17 +2,20 @@ html {
     font-size: 25px;
     background: #ffc600;
     display: grid;
+    text-align: center;
   }
 
 .container {
     border: 5px solid black;
     background: ivory;
     margin: auto;
-    height: 50vmax;
-    width: 50vmax;
+    height: 70vmax;
+    width: 70vmax;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
 }
 
 /* .container div {
@@ -37,3 +40,7 @@ html {
     content: "";
     padding-bottom: 100%;
   } */
+
+  .active {
+    background: black;
+  }
