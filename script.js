@@ -14,6 +14,7 @@ function addSquare() {
     num++
     const squares = container.querySelectorAll('.square');
     squares.forEach(square => square.addEventListener('mouseenter', addActive));
+    squares.forEach(square => square.addEventListener('touchenter', addActive));
 }
 
 for (var i = 1; i <= numSquares; ++i) {
